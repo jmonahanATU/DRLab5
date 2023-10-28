@@ -1,27 +1,40 @@
+<!DOCTYPE html>
 <html>
-    <body> 
+    <body>
         <h1>Hello from index.html</h1>
-<h3>Get method</h3>
-<form action="/name" method="GET">
-    <label>Firstname: </label>
-    <input type="text" name="fname" value="Josh"> 
 
-    <label>Surname: </label>
-    <input type="text" name="lname" value="Monahan"> 
+        <!-- Section for the GET method -->
+        <h3>Get method</h3>
 
-    <input type="submit" value="Submit"> 
+        <!-- A form element for sending data with a GET request -->
+        <form action="/name" method="GET">
+            <label>Firstname: </label>
+            <!-- An input field for the first name with a default value "Josh" -->
+            <input type="text" name="fname" value="Josh">
 
-</form>
-<h3>Post method</h3>
-<form action="/name" method="GET">
-    <label>Firstname: </label>
-    <input type="text" name="fname" value="Josh"> 
+            <label>Surname: </label>
+            <!-- An input field for the last name with a default value "Monahan" -->
+            <input type="text" name="lname" value="Monahan">
 
-    <label>Surname: </label>
-    <input type="text" name="lname" value="Monahan"> 
+            <!-- A submit button to submit the form -->
+            <input type="submit" value="Submit">
+        </form>
 
-    <input type="submit" value="Submit"> 
+        <!-- Section for the POST method -->
+        <h3>Post method</h3>
 
-</form>
+        <!-- A form element for sending data with a POST request (Note: method should be "POST") -->
+        <form action="/name" method="POST">
+            <label>Firstname: </label>
+            <!-- An input field for the first name with a default value "Josh" -->
+            <input type="text" name="fname" value="Josh">
+
+            <label>Surname: </label>
+            <!-- An input field for the last name with a default value "Monahan" -->
+            <input type="text" name="lname" value="Monahan">
+
+            <!-- A submit button to submit the form -->
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
